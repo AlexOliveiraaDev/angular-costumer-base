@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Variáveis
+$primary-color: #00b7ff;
+$secondary-color: #8f8f90;
+$border-radius: 20px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Estilo do card
+.card {
+  background-image: linear-gradient(to bottom, #333538, #1a1b1d);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 20px;
+  margin: 20px;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  font-family: "Noto Sans", sans-serif;
+  border: 2px solid #8f8f90;
+
+  &:hover {
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: -10px;
+  }
+
+  .content {
+    color: $secondary-color;
+    font-size: 1rem;
+  }
+
+  .button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
